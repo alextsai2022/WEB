@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>陽明山公園</title>
+    <style>
+        input[type=text]{
+            width: 100px;
+            transition-property: width,background-color,1s ease-in-out;
+        }
+        input[type=submit]{
+            width: 80px;
+            transition-property: width,background-color;
+        }
+        h1 {
+            height: 100px;
+            width: 350px;
+            text-align: center;
+            background-color: rgb(168, 224, 168);
+            color: green;
+            transition-property: opacity,height,width;
+            transition-duration: 10s;
+            transition-timing-function: ease;
+        }
+        img {
+            height:300px;
+            width: 300px;
+        }
+        img:hover{height: 500px;width: 500px;}
+        h1:hover {opacity: 1.0;height: 350px;width:1024px;}
+        input[type=submit]:hover{background-color: red; }
+        input[type=text]:focus{width: 200px; background-color: deeppink;}
+    </style>
+</head>
+<body>
+    <h1>陽明山國家公園簡介</h1>
+    <form>
+       <p>請輸入資料：<input type="text"><input type="submit"></p> 
+    </form>
+    <img src="yangmin.jpg">
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function m0() {
+            var exinfo = document.getElementsByTagName("h1");
+            document.getElementById("info").innerHTML = "h1=" + exinfo[0].innerHTML;
+        }
+        function m1() {
+            var info = document.getElementsByTagName("p");
+            document.getElementById("a1").innerHTML = info[0].innerHTML
+            document.getElementById("a2").innerHTML = info[1].innerHTML
+            document.getElementById("a3").innerHTML = info[2].innerHTML
+        }
+        function m2() {
+            var x = document.getElementsByClassName("a4");
+            document.getElementById("b1").innerHTML = "x=" + x[0].innerHTML
+            document.getElementById("b2").innerHTML = "x=" + x[1].innerHTML
+            document.getElementById("b3").innerHTML = "x=" + x[2].innerHTML
+        }
+        function m3() {
+            var y = document.querySelectorAll("p.a4")
+            document.getElementById("b4").innerHTML = "y=" + y[0].innerHTML;
+            document.getElementById("b5").innerHTML = "y=" + y[1].innerHTML;
+        }
+        function m4() {
+            var z = document.querySelector("p.a4");
+            document.getElementById("b6").innerHTML = "z=" + z.innerHTML;
+
+        }
+        function m5() {
+            var w = document.getElementsByClassName("a4");
+            var L = w.length;
+            var t="";
+            var i=0;
+            for (var i = 0; i < w.length; i++) {
+                t += w[i] + "<br>";
+            }
+            document.getElementById("b7").innerHTML = L;
+            document.getElementById("b8").innerHTML = t;
+        }
+    </script>
+</head>
+
+<body>
+    <h1>DOM DOM</h1>
+    <h1 id="info"></h1>
+    <p>DOM</p>
+    <p>2p</p>
+    <p>3p</p>
+    <p id="a1"></p>
+    <p id="a2"></p>
+    <p id="a3"></p>
+    <p class="a4">aaa</p>
+    <p class="a4">bbb</p>
+    <p id="b1"></p>
+    <p id="b2"></p>
+    <p id="b3"></p>
+    <p id="b4"></p>
+    <p id="b5"></p>
+    <p id="b6"></p>
+    <p id="b7"></p>
+    <p id="b8"></p>
+    <button type="button" onclick="m0()">A</button>
+    <button type="button" onclick="m1()">B</button>
+    <button type="button" onclick="m2()">C</button>
+    <button type="button" onclick="m3()">D</button>
+    <button type="button" onclick="m4()">E</button>
+    <button type="button" onclick="m5()">F</button>
+
+</body>
+
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5/24作業</title>
+    <script>
+        function m1(){
+            var welcome=window.prompt("請輸入文字: ");
+            window.alert(welcome+"歡迎你");
+
+        }
+        function m2(x,y){
+            var sum=x+y;
+            window.alert(x+"+"+y+"="+sum);
+        }
+        function m3(x,y){
+            var r;
+            var z=window.prompt("請選擇算法: 1:+ 2:- 3:* 4=/");
+            if(z==1){
+                r=x+y;
+                window.alert(x+"+"+y+"="+r);
+            }
+            else if(z==2){
+                r=x-y;
+                window.alert(x+"-"+y+"="+r);
+            }
+            else if(z==3){
+                r=x*y;
+                window.alert(x+"*"+y+"="+r);
+            }
+            else if(z==4){
+                r=x/y;
+                window.alert(x+"/"+y+"="+r);
+            }
+        }
+        function m4(x,y){
+            var r=x+y
+            return r;
+        }
+        function m5(){
+            document.getElementById("a1").innerHTML=m4(10,20)
+        }
+        function m6(){
+            var w=0.0;
+            var h=0;
+            var bmi=0
+            w=Number.parseFloat(window.prompt("請輸入體重(kg):"));
+            h=Number.parseFloat(window.prompt("請輸入身高(cm):"));
+            bmi=w/((h/100)*(h/100));
+            document.getElementById("a6").innerHTML="BMI="+bmi
+        }
+    </script>
+    <style>
+        @keyframes my-animaion{
+            0%{left:0px;top:0px;background-color: rgb(255, 3, 3);transform: translate(0px);}
+            25%{left:450px;top:100px;background-color: rgb(255, 234, 3);transform: translate(100px);}
+            50%{left:900px;top:200px;background-color: rgb(3, 255, 7);transform: translate(300px);}
+            75%{left:450px;top:100px;background-color: rgb(3, 121, 255);transform: translate(100px);}
+            100%{left:0px;top:0px;background-color: rgb(125, 3, 255);transform: translate(0px);}
+        }
+        h1{
+            width: 250px;
+            height: 100px;
+            color: rgb(250, 250, 17);
+            background-color: brown;
+            position: relative;
+            animation-name: my-animaion;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+    </style>
+</head>
+<body>
+    <h1>2023/5/24</h1>
+    <hr>
+    <button type="button" onclick="m1()">按鈕-1</button>&nbsp;
+    <button type="button" onclick="m2(1,2)">按鈕-2</button>&nbsp;
+    <a href="#" onclick="m2(1,2)">x+y</a>&nbsp;
+    <button type="button" onclick="m3(1,2)">按鈕-3</button>&nbsp;
+    <button type="button" onclick="m5(10,20)">按鈕-4</button>&nbsp;
+    <button type="button" onclick="m6()">按鈕-5</button>&nbsp;
+    <hr>
+    <p id="a1"></p>
+    <p style="font-size: 30px;" id="a6"></p>
+</body>
+</html>

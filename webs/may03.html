@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5月3日網頁</title>
+    <style>
+        body {
+            background-color: lightgray;
+        }
+
+        #e1 {
+            margin: 0px;
+            background-color: rgb(0, 179, 255);
+            color: rgb(247, 0, 255);
+        }
+
+        #e2 {
+            margin: 20px;
+            background-color: rgb(255, 0, 0);
+            color: rgb(217, 255, 0);
+        }
+
+        #e3 {
+            margin: 40px;
+            background-color: rgb(4, 255, 0);
+            color: rgb(255, 0, 51);
+        }
+
+        #e4 {
+            margin: 30px;
+            padding: 20px 40px 5px 5px;
+            text-align: justify;
+            background-color: azure;
+            color: red;
+            border-style: double;
+            border-color: chartreuse;
+            border-radius: 50px;
+        }
+
+        #e5 {
+            margin: 30px;
+            padding: 20px 40px 5px 5px;
+            text-align: justify;
+            background-color: azure;
+            color: red;
+            border-style: double;
+            border-top-color: red;
+            border-right-color: blue;
+            border-bottom-color: darkorange;
+            border-left-color: deeppink;
+        }
+
+
+        h1#ex1 {
+            text-align: center;
+            border-style: dotted;
+        }
+
+        h1#ex2 {
+            text-align: center;
+            border-style: dashed;
+        }
+
+        h1#ex3 {
+            text-align: center;
+            border-style: solid;
+        }
+
+        h1#ex4 {
+            text-align: center;
+            border-style: double;
+
+        }
+
+        h1#ex5 {
+            text-align: center;
+            border-style: groove;
+        }
+
+        h1#ex6 {
+            text-align: center;
+            border-style: ridge;
+        }
+
+        h1#ex7 {
+            text-align: center;
+            border-style: inset;
+            background-color: lightyellow;
+            border-radius: 20px;
+        }
+
+        h1#ex8 {
+            text-align: center;
+            border-style: outset;
+        }
+
+        #photo1 {
+            border-style: outset;
+            border-color: red;
+            width: 500px;
+            height: 300px;
+            border-width: medium;
+            box-shadow: lightslategray 10px 10px 10px;
+        }
+
+        #photo2 {
+            border: solid thick blue;
+            width: 500px;
+            height: 300px;
+            border-top-left-radius: 30px;
+            border-top-right-radius: 60px;
+        }
+
+        #div1 {
+            width: 200px;
+            height: 100px;
+            border: thin solid green;
+            overflow-x: scroll;
+            overflow-y: scroll;
+            text-align: left;
+            overflow: auto;
+            resize: both;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="ex7">5月3日網頁</h1>
+    <p style="font-size: 25px;">h1標記的樣式</p>
+    <h1 id="e1">5月3日網頁</h1>
+    <h1 id="e2">5月3日網頁</h1>
+    <h1 id="e3">5月3日網頁</h1>
+    <p style="font-size: 25px;">文字對齊與邊界</p>
+    <p id="e4">
+        「國家公園」，是指具有國家代表性之自然區域或人文史蹟。
+        自1872美國設立世界上第一座國家公園—黃石國家公園(Yellowstone National Park) 起，
+        迄今全球已超過3800座的國家公園。台灣自1961年開始推動國家公園與自然保育工作，
+        1972年制定「國家公園法」之後，相繼成立墾丁、玉山、陽明山、太魯閣、雪霸、金門、
+        東沙環礁、台江與澎湖南方四島共計9座國家公園；為有效執行國家公園經營管理之任務，
+        於內政部轄下成立國家公園管理處，以維護國家資產。
+    </p>
+    <div id="e5">
+        In the post-pandemic era, hiking has become a popular outdoor activity.
+        With the collaboration of various National Park headquarters,
+        the hiking website “Hiking Biji” proposed the “Explore Yangmingshan”
+        Treasure Hunt App project, hoping to provide a unique way of entertainment
+        for people to get closer to nature. As a result, the Yangmingshan
+        National Park Headquarters has planned to renovate 16 hiking trails,
+        divided into 18 missions, with a total of 74 ecological gems.
+        Those interested can simply download the Hiking Biji app,
+        enter “Explore Yangmingshan Treasure Hunt Mission” and select
+        “Trails” to download the “Offline Mission” to start the challenge.
+    </div>
+    <p style="font-size: 25px;">邊框樣式</p>
+    <h1 id="ex1">dotted框</h1>
+    <h1 id="ex2">dashed框</h1>
+    <h1 id="ex3">solid框</h1>
+    <h1 id="ex4">double框</h1>
+    <h1 id="ex5">grove框</h1>
+    <h1 id="ex6">ridge框</h1>
+    <h1 id="ex7">inset框</h1>
+    <h1 id="ex8">outset框</h1>
+
+    <div style="background-color: rgb(2, 255, 213);">
+        <p style="font-size: 25px;text-align: center;">圖片加框</p>
+        <img id="photo1" src="alpsee-g4023fe19c_1280.jpg">
+        <br><br><br>
+        <img id="photo2" src="yangmin.jpg">
+    </div>
+    <p><h1>文字超出範圍</h1></p>
+    <div id="div1">
+        In the post-pandemic era, hiking has become a popular outdoor activity.
+        With the collaboration of various National Park headquarters,
+        the hiking website “Hiking Biji” proposed the “Explore Yangmingshan”
+        Treasure Hunt App project, hoping to provide a unique way of entertainment
+        for people to get closer to nature. As a result, the Yangmingshan
+        National Park Headquarters has planned to renovate 16 hiking trails,
+        divided into 18 missions, with a total of 74 ecological gems.
+        Those interested can simply download the Hiking Biji app,
+        enter “Explore Yangmingshan Treasure Hunt Mission” and select
+        “Trails” to download the “Offline Mission” to start the challenge.
+
+    </div>
+</body>
+
+</html>
